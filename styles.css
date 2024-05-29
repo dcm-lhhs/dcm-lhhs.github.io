@@ -1,0 +1,254 @@
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 90px;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(135, 168, 139);
+}
+
+a:hover {
+	color: rgb(76, 119, 81);
+}
+
+h1 {
+	margin: 0;
+	font-size: 2.5em;
+	color: #4e66dd;
+}
+
+h1:hover {
+	color: rgb(49, 52, 214);
+}
+
+h2 {
+	margin: 0;
+	margin-left: 40px;
+	font-size: 1.3em;
+}
+
+nav {
+	display: flex;
+	padding: 20px;
+	height: 50px;
+	background-color: #061042;
+	position: fixed;
+	top: 0px;
+	right: 0;
+	left: 0;
+	z-index: 99;
+}
+
+#logo-container {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	/* border: 2px solid #000; */
+}
+
+#navbar-options {
+	display: flex;
+	flex: 6;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#home {
+	padding-top: 90px;
+	display: flex;
+	height: 80vh;
+}
+
+#home-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	width: 60%;
+	background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+		url("./static/ai.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h3 {
+	margin: 0;
+	font-size: 4em;
+	color: #798ceb;
+	text-align: center;
+}
+
+#home-right {
+	display: flex;
+	flex-direction: column;
+	background-color: #233e8f;
+	width: 40%;
+	padding: 40px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+h4 {
+	margin: 0;
+	font-size: 2.8em;
+	color: #798ceb;
+}
+
+h4-strong {
+	color: #bdc6f5;
+}
+
+button {
+	display: flex;
+	justify-content: center;
+	background-color: #24292e;
+	border: 2px solid #798ceb;
+	border-radius: 25px;
+	padding: 20px;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #798ceb;
+	width: 70%;
+	margin-top: 40px;
+	text-decoration: none;
+}
+
+button:hover {
+	background-color: #2b3137;
+}
+
+.fa.fa-github {
+	font-size: 20px;
+}
+
+#about {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 70vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
+		url("./static/coding.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+p {
+	margin: 0;
+	font-size: 1.5em;
+	color: #bdc6f5;
+}
+
+p-strong {
+	color: #798ceb;
+}
+
+#downloads {
+	display: flex;
+	height: 80vh;
+}
+
+#downloads-left {
+	background-color: #102357;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 40px;
+	width: 60%;
+}
+
+#downloads-right {
+	background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+		url("./static/downloads.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 40%;
+}
+
+#how-to-use {
+	display: flex;
+	height: 140vh;
+}
+
+#how-to-use-left {
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+		url("./static/instructions.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+	padding: 40px;
+}
+
+#instructions-text {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.img-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+#how-to-use-right {
+	display: flex;
+	padding-top: 100px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 35%;
+	background-color: #233e8f;
+}
+
+#support {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 75vh;
+	padding: 40px;
+	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
+		url("./static/support.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#support-content {
+	display: flex;
+	flex-direction: row;
+}
+
+#support-content-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+}
+
+#support-content-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.support-button {
+	margin-top: 0;
+}

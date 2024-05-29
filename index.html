@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<script
+			src="https://kit.fontawesome.com/a8cf151fc0.js"
+			crossorigin="anonymous"
+		></script>
+		<title>MasterMindAI: your simple chess engine</title>
+	</head>
+	<body>
+		<nav>
+			<div id="logo-container">
+				<a href=""><h1>MasterMindAI</h1></a>
+			</div>
+			<div id="navbar-options">
+				<a class="nav-link" href="#home"><h2>Home</h2></a>
+				<a class="nav-link" href="#about"><h2>About</h2></a>
+				<a class="nav-link" href="#downloads"><h2>Downloads</h2></a>
+				<a class="nav-link" href="#how-to-use"><h2>How to use</h2></a>
+				<a class="nav-link" href="#support"><h2>Support</h2></a>
+			</div>
+		</nav>
+		<div id="home">
+			<div id="home-left">
+				<h3>MasterMindAI, your simple AI chess engine</h3>
+			</div>
+			<div id="home-right">
+				<h4>
+					Completely <h4-strong>free</h4-strong> and
+					<h4-strong>open source</h4-strong>.
+				</h4>
+				<button
+					id="github-button"
+					onclick="window.open('https://github.com/davidcm-dev/MasterMindAI', '_blank')"
+				>
+					<i class="fa fa-github"></i>&nbsp&nbsp&nbspView source code
+					on GitHub
+				</button>
+			</div>
+		</div>
+		<div id="about">
+			<h3>About MasterMindAI</h3>
+			<p>
+				MasterMindAI is a chess engine developed completely from scratch
+				using the
+				<p-strong>Python</p-strong> programming language. The main goal
+				of my project is providing the
+				<p-strong>community</p-strong> with code they can use as a
+				reference for <p-strong>chess programming</p-strong>, discussing
+				improvements on my engine and your engines, and learn together!
+			</p>
+		</div>
+		<div id="downloads">
+			<div id="downloads-left">
+				<h3>Downloads</h3>
+				<p>
+					MasterMindAI uses the
+					<a
+						target="_blank"
+						href="https://en.wikipedia.org/wiki/Universal_Chess_Interface"
+						>UCI chess protocol</a
+					>
+					to receive and send moves. Since it would be really boring
+					to type the commands manually, the easiest way to use this
+					engine is by means of a
+					<a target="_blank" href="https://chessprogramming.org/GUI"
+						>GUI (graphical user interface).</a
+					>
+				</p>
+				<br />
+				<p>
+					Unfortunately, MasterMindAI can't analyse games at the
+					moment (feel free to contribute to the source code to make
+					this happen!). Its only functionality right now is playing
+					games, and you can test it on the website
+					<a target="_blank" href="https://lichess.org"
+						>lichess.org.</a
+					>
+				</p>
+			</div>
+			<div id="downloads-right">
+				<button
+					onclick="window.open('https://lichess.org/@/MasterMindAI'), '_blank'"
+				>
+					<i class="fas fa-chess"></i>&nbsp&nbsp&nbspPlay on Lichess
+				</button>
+				<button
+					onclick="window.open('https://github.com/davidcm-dev/MasterMindAI'), '_blank'"
+				>
+					<i class="fa fa-github"></i>&nbsp&nbsp&nbspView source code
+					on GitHub
+				</button>
+				<button onclick="download()">
+					<i class="fas fa-download"></i>&nbsp&nbsp&nbspDownload
+					executable file
+				</button>
+			</div>
+		</div>
+		<div id="how-to-use">
+			<div id="how-to-use-left">
+				<h3 id="instructions-title">Lichess instructions</h3>
+				<div id="instructions-content">
+					<p id="instructions-text">
+						It's really easy to play MasterMindAI in
+						<a href="https://lichess.org" target="_blank"
+							>lichess.org</a
+						>! Just create an account
+						<a href="https://lichess.org/signup" target="_blank"
+							>here</a
+						>
+						if you don't have one already. Log in, go to the
+						<a
+							href="https://lichess.org/@/MasterMindAI"
+							target="_blank"
+							>MasterMindAI lichess profile</a
+						>, press the challenge button, set a time and a color
+						and you're good to go!
+					</p>
+
+					<div class="img-container">
+						<img
+							src="./static/lichess1.JPG"
+							alt="Instructions screenshot 1"
+							height="50"
+							width="300"
+						/>
+					</div>
+					<div class="img-container">
+						<img
+							src="./static/lichess2.JPG"
+							alt="Instructions screenshot 2"
+							height="410"
+							width="300"
+						/>
+					</div>
+				</div>
+			</div>
+			<div id="how-to-use-right">
+				<button id="lichess-instructions-btn">
+					<i class="fas fa-chess"></i>&nbsp&nbsp&nbspLichess
+					instructions
+				</button>
+				<button id="github-instructions-btn">
+					<i class="fa fa-github"></i>&nbsp&nbsp&nbspGitHub
+					instructions
+				</button>
+				<button id="exe-instructions-btn">
+					<i class="fas fa-download"></i>&nbsp&nbsp&nbspExecutable
+					instructions
+				</button>
+			</div>
+		</div>
+		<div id="support">
+			<h3>Support</h3>
+			<div id="support-content">
+				<div id="support-content-left">
+					<p>
+						If you have any questions about the project, feel free
+						to reach out to me on my
+						<a href="#support" onclick="copyEmail()"
+							>email address</a
+						>. Please contribute to the source code and share the
+						project with friends if you can to make the community
+						bigger!
+					</p>
+					<br />
+					<p>Useful links:</p>
+					<p>
+						-
+						<a href="https://www.python.org/" target="_blank"
+							>Python website</a
+						>
+					</p>
+					<p>
+						-
+						<a
+							href="https://www.chessprogramming.org/Main_Page"
+							target="_blank"
+							>Chess programming website</a
+						>
+					</p>
+					<p>
+						-
+						<a
+							href="https://python-chess.readthedocs.io/en/latest/index.html"
+							target="_blank"
+							>python-chess library</a
+						>
+					</p>
+					<p>
+						-
+						<a
+							href="https://lichess.org/@/thibault/blog/how-to-create-a-lichess-bot/FuKyvDuB"
+							target="_blank"
+							>How to create a Lichess bot</a
+						>
+					</p>
+				</div>
+				<div id="support-content-right">
+					<button
+						class="support-button"
+						onclick="window.open('mailto:davcab32906@nbss.nbed.nb.ca')"
+					>
+						<i class="fa fa-envelope"></i>&nbsp&nbsp&nbspSend me an
+						email</button
+					><button
+						class="support-button"
+						onclick="window.open('https://github.com/davidcm-dev/MasterMindAI'), '_blank'"
+					>
+						<i class="fa fa-github"></i>&nbsp&nbsp&nbspContribute to
+						the source code</button
+					><button class="support-button" onclick="copyUrl()">
+						<i class="fa fa-share"></i>&nbsp&nbsp&nbspShare project
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script src="script.js"></script>
