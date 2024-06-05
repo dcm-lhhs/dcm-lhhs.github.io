@@ -1,6 +1,6 @@
 # MasterMindAI Final Project
 
-To get a quick introduction of the project, visit the [project website](https://dcm-lhhs.github.io). For some reason, the school network sometimes doesn't allow to enter the site. So try switching to another network, and make sure you use a PC/laptop to see it for the best experience.
+To get a quick introduction of the project, visit the [project website](https://dcm-lhhs.github.io). For some reason, the school network sometimes doesn't allow to enter the site. So try switching to another network, and make sure you use a PC/laptop to see it for the best experience. You can also download this repository as a ZIP, extract it and open up the index.html file.
 
 You can directly access the project source code on this [repository](https://github.com/davidcm-dev/MasterMindAI).
 
